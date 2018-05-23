@@ -1,1 +1,1 @@
-ssm-maven java Config
+这是一个使用java配置的ssm-maven项目基本框架
