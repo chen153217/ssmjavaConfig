@@ -29,13 +29,11 @@ public class MainController {
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(HttpServletRequest request){
-        String username=(String)request.getParameter("username");
-        String password=(String)request.getParameter("password");
-        if(username==null||password==null)
-            return "fail";
-        if(username.equals("hansen")&&password.equals("123456"))
-            return "success";
-        else return "fail";
+
+        //TODO 前端传过来username和password两个参数，如果用户名为hansen且密码为123456,则返回success，否则返回fail
+
+
+        return "";
     }
 
     @RequestMapping(value = "/register",method = RequestMethod.POST)

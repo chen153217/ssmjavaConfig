@@ -2,6 +2,7 @@ package com.ssm.service;
 
 import com.ssm.mappers.UserMapper;
 import com.ssm.model.nochange.User;
+import com.ssm.utils.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +17,6 @@ public class UserService {
 
     public void saveUser(User user){
         userMapper.saveUser(user);
+        FileUtils.write(user.getUsername());
     }
 }
