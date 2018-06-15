@@ -30,7 +30,7 @@ public class MainController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(HttpServletRequest request){
 
-        //TODO 前端传过来username和password两个参数，如果用户名为hansen且密码为123456,则返回success，否则返回fail
+        //TODO  前端传过来username和password两个参数，如果用户名为hansen且密码为123456,则返回success，否则返回fail
 
 
         return "";
